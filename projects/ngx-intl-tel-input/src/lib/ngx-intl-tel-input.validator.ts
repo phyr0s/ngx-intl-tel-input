@@ -47,10 +47,8 @@ export const phoneNumberValidator = (control: any) => {
 					return error;
 				} else {
 					if (
-						!lpn.PhoneNumberUtil.getInstance().isValidNumberForRegion(
-							number,
-							control.value.countryCode
-						)
+						!lpn.PhoneNumberUtil.getInstance().isValidNumber(
+							number)
 					) {
 						return error;
 					} else {

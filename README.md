@@ -25,14 +25,6 @@ Validation with [google-libphonenumber](https://github.com/ruimarinho/google-lib
 
 `$ npm install google-libphonenumber --save`
 
-`$ ng add ngx-bootstrap`
-
-If you do not wish to use Bootstrap's global CSS, we now package the project with only the relevant
-bootstrap styling needed for the dropdown. As such, you can remove the bootstrap styling from `angular.json`.
-
-Further, Angular CLI should tree-shake the rest of Ngx-Boostrap away if you don't utilize other dependencies from
-the bootstrap package. This should keep this dependency a lean feature-add
-
 ### Add Dependency Style
 
 Add _'intl-tel-input'_ style file:
