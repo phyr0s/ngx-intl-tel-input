@@ -302,6 +302,7 @@ export class NgxIntlTelInputComponent implements OnInit, OnChanges {
 					: '',
 				countryCode: this.selectedCountry.iso2.toUpperCase(),
 				dialCode: '+' + this.selectedCountry.dialCode,
+				fullNumber: this.value?.replace(/(\s|-|\(|\))/g, '')
 			});
 		} else {
 			// Reason: avoid https://stackoverflow.com/a/54358133/1617590
